@@ -1,0 +1,26 @@
+<h1>{{ attraction.name }}</h1>
+
+<div>{{ attraction.address }}</div>
+
+<div>{{ attraction.introduction }}</div>
+
+<div class="image-list">
+  <ngx-slick-carousel
+    #slickModal="slick-carousel"
+    [config]="slideConfig"
+    class="carousel"
+  >
+    <div
+      *ngFor="let image of attraction.images"
+      ngxSlickItem
+      class="slide"
+    >
+      <img
+        [src]="image.src"
+        alt=""
+        width="100%"
+      >
+    </div>
+
+  </ngx-slick-carousel>
+</div>

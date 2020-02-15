@@ -1,0 +1,23 @@
+:host {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 1080px) {
+    display: block;
+  }
+
+  .attraction-card {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 240px;
+    margin: 10px;
+    width: 292px;
+
+    @media screen and (max-width: 1080px) {
+      flex-direction: row;
+      height: auto;
+      width: auto;
+    }
+  }
+}

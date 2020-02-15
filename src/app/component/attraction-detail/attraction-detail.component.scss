@@ -1,0 +1,14 @@
+:host {
+
+  .image-list {
+    margin: auto;
+    width: 70%;
+  }
+
+  /deep/.slick-prev:before,
+  /deep/.slick-next:before {
+    color: gray;
+  }
+
+}
+

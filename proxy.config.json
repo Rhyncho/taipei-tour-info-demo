@@ -1,0 +1,9 @@
+{
+  "/open-api": {
+    "target": "https://www.travel.taipei/",
+    "secure": true,
+    "pathRewrite": {
+    },
+    "changeOrigin": true
+  }
+}

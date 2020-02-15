@@ -1,0 +1,20 @@
+<mat-card
+  *ngFor="let attraction of attractions | keyvalue"
+  (click)="clickCard(attraction.value)"
+  class="attraction-card"
+>
+  <img
+    [src]="attraction.value.titleImage"
+    style="height: 200px;"
+  >
+  <div
+    style="
+      align-self: center;
+      margin-left: 20px;
+    "
+  >
+    <div>{{ attraction.value.name }}</div>
+    <div>{{ attraction.value.address }}</div>
+  </div>
+
+</mat-card>
